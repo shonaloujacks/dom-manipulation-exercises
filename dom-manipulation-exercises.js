@@ -20,8 +20,22 @@ heading3.setAttribute("style", "color: blue");
 
 content.appendChild(heading3);
 
-// an <h3> with blue text that says “I’m a blue h3!”
-// a <div> with a black border and pink background color with the following elements inside of it:
-// another <h1> that says “I’m in a div”
-// a <p> that says “ME TOO!”
+const content2 = document.createElement("div");
+content2.classList.add("content2");
+content2.setAttribute("style", "background: pink; border: black");
+
+const heading1 = document.createElement("h1");
+heading1.classList.add("heading1");
+heading1.textContent = "I'm in a div";
+
+content2.appendChild(heading1);
+
+const paragraph2 = document.createElement("p");
+paragraph2.classList.add("paragraph2");
+paragraph2.textContent = "ME TOO!";
+
+content2.appendChild(paragraph2);
+
+container.appendChild(content2);
+
 // Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
